@@ -1,0 +1,21 @@
+﻿@page "/counter"
+@rendermode InteractiveAuto
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+<button type="button"
+        data-ripple-light="true"
+        class="py-3 px-6 bg-gray-900 text-white shadow-gray-900/10 select-none rounded-lg text-center align-middle font-sans text-xs font-bold uppercase shadow-md transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none"  @onclick="IncrementCount">Click me
+</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
