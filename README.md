@@ -25,7 +25,7 @@ BlazorMaterial/
 │       └── Home.razor
 ├── wwwroot/
 │   ├── css/
-│   │   └── app.css
+│   │   └── input.css
 │   └── ...
 └── Program.cs
 └── ...
